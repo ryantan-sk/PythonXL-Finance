@@ -1,7 +1,7 @@
-# OpenPyXL-Finance
+# PythonXL-Finance
 
 # Description
-This is a practice project used to learn basics of OpenPyXL and practice simple GUI development with tkinter
+This is a practice project used to learn basics of mainpulating excel sheets using python and practice simple GUI development with tkinter
 
 # Objectives
 - Basic GUI widget app with the ability to add data to excel file and open the excel file
