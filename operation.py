@@ -230,8 +230,8 @@ def delete_sheet(sheet):
         pass
     return
 
-
-create_file()
+# Test File
+test =  '''create_file()
 user_input_data("Personal Finance", "Food", "25.00")
 user_input_data("Personal Finance", "Pet", "30.00")
 user_input_data("Personal Finance", "Rent", "125.00")
@@ -243,4 +243,4 @@ create_pie_chart()
 create_bar_chart()
 
 auto_adjust_column()
-open_file()
+open_file() '''
