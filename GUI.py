@@ -1,6 +1,8 @@
 import tkinter as tk
 from tkinter import ttk
 
+import operation
+
 # styling
 field_font = ("Times New Roman", "20")
 entry_font = ("Times New Roman", "20")
