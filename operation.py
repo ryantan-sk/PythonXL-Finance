@@ -145,7 +145,6 @@ def load_chart_data(sheet, column_name, data_sheet):
         total = sum(i for i in item_data)
         chart_data[item] = total
 
-    print(chart_data)
     r = 3
     for item in chart_data:
         data_sheet.cell(row=r, column=2).value = item
@@ -195,6 +194,7 @@ def create_bar_chart():
     cs.add_chart(chart)
     wb.save(file_path)
 
+
 def auto_adjust_column():
     # Load workbook and get all sheet names
     wb = load_workbook(file_path)
@@ -230,17 +230,17 @@ def delete_sheet(sheet):
         pass
     return
 
-# Test File
-test =  '''create_file()
-user_input_data("Personal Finance", "Food", "25.00")
-user_input_data("Personal Finance", "Pet", "30.00")
-user_input_data("Personal Finance", "Rent", "125.00")
-user_input_data("Personal Finance", "Junk", "5.00")
-delete_sheet("Sheet")
-delete_sheet("Category Chart")
-delete_sheet("Time Chart")
-create_pie_chart()
-create_bar_chart()
 
-auto_adjust_column()
-open_file() '''
+def initialize_file():
+    create_file()
+    delete_sheet("Sheet")
+
+
+def open_function():
+    delete_sheet("Category Chart")
+    delete_sheet("Time Chart")
+
+    create_bar_chart()
+    create_pie_chart()
+    auto_adjust_column()
+    open_file()
